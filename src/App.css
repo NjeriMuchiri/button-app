@@ -59,4 +59,5 @@
 .button-btn:hover{
   background:linear-gradient(-105deg, rgba(0, 138, 138, 0.6), #48d1cc);
   color:#111;
+  font-family: 'Comfortaa',cursive;
 }

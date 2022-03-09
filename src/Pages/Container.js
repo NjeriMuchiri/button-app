@@ -31,7 +31,7 @@ return(
      </article>
  ))}
         
-            <button className="button-btn" type="button" onClick={handleChange}>Open</button>
+            <button className="button-btn" type="button" onClick={handleChange}>Special Order</button>
 </div>
     </>
 )
