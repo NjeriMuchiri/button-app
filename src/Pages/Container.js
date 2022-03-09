@@ -5,17 +5,16 @@ import menuData from "../Components/menudata";
 
 const ButtonContainer = () =>{
      const [menu,setMenu] = useState([]);
-     const [btn,setBtn] = useState();
+     const [btn,setBtn] = useState('');
 
     
      const handleChange =(e) =>{
          e.preventDefault();
-         setBtn([Math.floor(Math.random() * menuData.length - 1)]);
+         setBtn(menuData[Math.floor(Math.random() * menuData.length - 1)]);
           setMenu(menuData.map((item) =>item))
       }
      console.log(menuData);
     
-
 return(
     <>
     <div className="header">
@@ -23,19 +22,17 @@ return(
     </div>
     <div className="section-menu">
  { btn !== 0 && menu.map(item =>(
-     <article key = {item.id}>
-     <img 
+     <article className="menu-place" key = {item.id}>
+     <img className="image-sect"
      src={item.image}
      alt={item.category}
      />
-     <p>{item.text}</p>
+     <p className="text-abt">{item.text}</p>
      </article>
  ))}
-
-        </div>
         
-            <button className="button-container" type="button" onClick={handleChange}>Open</button>
-
+            <button className="button-btn" type="button" onClick={handleChange}>Open</button>
+</div>
     </>
 )
 };

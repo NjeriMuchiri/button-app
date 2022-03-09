@@ -13,7 +13,7 @@ import dessert from '../Images/dessert4.jpg';
         id:1,
         category:"Chinesefoods",
         image:chinesefoods,
-        text: "Enjoy our in house chinese food that was prepared passinately just for you! Welcome again and again ",
+        text: "Enjoy our in house chinese food that was prepared passionately just for you! Welcome again and again ",
     },
      {
          id:2,
