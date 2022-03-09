@@ -19,14 +19,10 @@
   letter-spacing:0.15em;
   font-size: 25px;
 }
-.section-menu{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
 .section-menu img{
   display:block;
-  height:20rem;
-  object-fit: cover;
+  height:448px;
+  object-fit: contain;
   border-radius:30px;
 }
+

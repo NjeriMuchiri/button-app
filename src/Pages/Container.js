@@ -9,11 +9,11 @@ const ButtonContainer = () =>{
 
     
      const handleChange =(e) =>{
-         setBtn(e.target.value);
-     
+         e.preventDefault();
+         setBtn([Math.floor(Math.random() * menuData.length - 1)]);
           setMenu(menuData.map((item) =>item))
       }
-    //  console.log(menuData);
+     console.log(menuData);
     
 
 return(
@@ -22,7 +22,7 @@ return(
       <h3>LaCafe Menu</h3>
     </div>
     <div className="section-menu">
- { btn || menu.map(item =>(
+ { btn !== 0 && menu.map(item =>(
      <article key = {item.id}>
      <img 
      src={item.image}

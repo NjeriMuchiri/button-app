@@ -1,12 +1,12 @@
 import chinesefoods from '../Images/chinese1.jpeg';
 import family from '../Images/dinnerspecial.jpg';
 import indian from '../Images/indian.jpg';
-import korean from '../Images/korean1.jpeg';
+import korean from '../Images/foodv.jpg';
 import mexican from '../Images/mexican.jpg';
 import special from '../Images/restrauntk.jpg';
 import sea from '../Images/seefood2.jpg';
 import wine from '../Images/wine6.jpg';
-import dessert from '../Images/dessertspecial.jpeg';
+import dessert from '../Images/dessert4.jpg';
 
  const menuData = [
     {
