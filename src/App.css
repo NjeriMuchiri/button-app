@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Festive&family=Great+Vibes&family=Lobster&family=Redressed&family=Road+Rage&family=Satisfy&family=Syne+Mono&family=ZCOOL+QingKe+HuangYou&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.section-menu{
+   min-height:50vh;
+   width:90vw;
+   max-width:1170px;
+}
+.header h3{
+  text-align: center;
+  color:#0abab5;
+  text-transform: uppercase;
+  margin-top:20px;
+  font-family:'Lobster',
+  cursive;
+  letter-spacing:0.15em;
+  font-size: 25px;
+}
+.section-menu{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-menu img{
+  display:block;
+  height:20rem;
+  object-fit: cover;
+  border-radius:30px;
+}
