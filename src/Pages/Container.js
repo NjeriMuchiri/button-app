@@ -22,10 +22,13 @@ return(
       <h3>LaCafe Menu</h3>
     </div>
     <div className="section-menu">
- {menu.length !== 0 && btn.map(item =>(
-     <article className="menu-place" key = {item.id}>
-         <h1 className="foods">{item.category}</h1>
-     <img className="image-sect"
+ {!menu.length === 0 && btn.map(item =>(
+     <article 
+     className="menu-place" 
+     key = {item.id}>  
+    <h1 className="foods">{item.category}</h1>
+     <img 
+     className="image-sect"
      src={item.image}
      alt={item.category}
      />
