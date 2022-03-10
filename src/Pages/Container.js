@@ -9,11 +9,12 @@ const ButtonContainer = () =>{
 
     
      const handleChange =(e) =>{
+        //  setBtn(e.target.value)
          e.preventDefault();
-         setBtn(menuData[Math.floor(Math.random() * menuData.length - 1)]);
-          setMenu(menuData.map((item) =>item))
+          setBtn(menuData.map((item) =>item));
+          setMenu(menuData[Math.floor(Math.random() * menuData.length - 1)]);
       }
-     console.log(menuData);
+     console.log(menu);
     
 return(
     <>
@@ -21,8 +22,9 @@ return(
       <h3>LaCafe Menu</h3>
     </div>
     <div className="section-menu">
- { btn !== 0 && menu.map(item =>(
+ {menu.length !== 0 && btn.map(item =>(
      <article className="menu-place" key = {item.id}>
+         <h1 className="foods">{item.category}</h1>
      <img className="image-sect"
      src={item.image}
      alt={item.category}
@@ -30,8 +32,7 @@ return(
      <p className="text-abt">{item.text}</p>
      </article>
  ))}
-        
-            <button className="button-btn" type="button" onClick={handleChange}>Special Order</button>
+            <button className="button-btn" type="button" onClick={handleChange}>Surprise Meal</button>
 </div>
     </>
 )
